@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    color: #333;
+}
+
+.container {
+    width: calc(85% + 1rem);
+    margin: 0 auto;
+    padding: 3rem 0.5rem;
+    max-width: 768px;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    position: relative;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+b {
+    color: #00B0FF;
+}
+
+.underline {
+    margin: 2rem 0.5rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.underline li {
+    height: 1px;
+    width: 50%;
+    background-color: #808080;
+}
+
+.underline li.second {
+    width: 30%;
+}
+
+.underline li.third {
+    width: 16%;
+}
+
+a.link::before {
+    content: "";
+    position: absolute;
+    background-color: #00aeff40;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    transition: .35s ease-out;
+}
+
+a.link:hover::before {
+    height: 50%;
+}
+
+a.btn {
+    border: 1px solid #00B0FF;    
+    border-radius: 3px;
+    font-weight: normal;
+    padding: 1rem 2rem;
+    background: #fff;
+    width: 253px;
+    display: block;
+    margin: 2rem auto;
+}
+
+a.btn span {
+    display: inline-block;
+    padding-left: 0.5rem;    
+    transition: .35s ease-out;
+}
+
+a.btn::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #00B0FF;                    
+    border-bottom: 1px solid #00B0FF;
+    border-bottom-left-radius: 3px;
+    top: 5px;
+    right: 5px;
+    z-index: -1;
+    transition: .35s ease-out;
+}
+
+a.btn::after {
+    content: "";
+    position: absolute;
+    background-color: #00B0FF;
+    width: 0%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    transition: .28s ease-out;
+}
+
+a.btn:hover::before {
+    background-color: #00B0FF;
+}
+
+a.btn:hover::after {
+    width: 100%;
+}
+
+a.btn:hover span {
+    padding-left: 1rem;
+}
+
+.hng-logo {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    right: 1rem;
+    transition: 0.35s ease-out;
+}
+
+.hng-logo:hover img {
+    transform: rotate(90deg);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        /* padding: 5rem 3rem; */
+    }
+
+    .underline li {
+        width: 52%;
+    }
+
+    .hng-logo {
+        /* right: 1.5rem; */
+    }
+}
