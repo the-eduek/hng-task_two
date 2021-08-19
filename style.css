@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Nunito', 'Poppins', sans-serif;
-    color: #333;
+    color: #333;    
+    background-image: linear-gradient(to top right, #fff, #00aeff10);
 }
 
 .container {
