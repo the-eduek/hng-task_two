@@ -5,17 +5,21 @@
 }
 
 body {
-    font-family: 'Nunito', 'Poppins', sans-serif;
-    color: #333;    
+    font-family: 'Nunito', sans-serif;
+    color: #333;
     background-image: linear-gradient(to top right, #fff, #00aeff10);
 }
 
 .container {
     width: calc(85% + 1rem);
-    margin: 0 auto;
+    margin:  auto;
     padding: 5rem 0.5rem;
     max-width: 768px;
     position: relative;
+}
+
+h1 {
+    font-size: 1.8rem;
 }
 
 h2 {
@@ -131,8 +135,8 @@ a.btn:hover span {
 .hng-logo {
     position: absolute;
     border-radius: 50%;
-    width: 50px;
-    right: 1rem;
+    width: 40px;
+    right: 0.5rem;
     transition: 0.35s ease-out;
 }
 
@@ -141,15 +145,15 @@ a.btn:hover span {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        /* padding: 5rem 3rem; */
+    h1 {
+        font-size: 2rem;
     }
-
+    
     .underline li {
         width: 52%;
     }
 
     .hng-logo {
-        /* right: 1.5rem; */
+        width: 50px;
     }
 }
