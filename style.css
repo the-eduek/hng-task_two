@@ -49,11 +49,21 @@ a.hng-logo {
 a.hng-logo img {
     border-radius: 50%;
     max-width: 40px;
-    transition: 0.35s ease-out;
+    animation: roll 3.5s linear 0s infinite;
 }
 
 a.hng-logo:hover img {
-    transform: rotate(90deg);
+    animation-play-state: paused;
+}
+ 
+@keyframes roll {
+    25% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 h2 {
