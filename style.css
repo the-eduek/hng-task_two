@@ -12,18 +12,10 @@ body {
 
 .container {
     width: calc(85% + 1rem);
-    margin:  auto;
+    margin: 0 auto;    
     padding: 5rem 0.5rem;
     max-width: 768px;
     position: relative;
-}
-
-h1 {
-    font-size: 1.8rem;
-}
-
-h2 {
-    margin-bottom: 1.5rem;
 }
 
 a {
@@ -39,6 +31,33 @@ a:hover {
 
 b {
     color: #00B0FF;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+a.hng-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+a.hng-logo img {
+    border-radius: 50%;
+    max-width: 40px;
+    transition: 0.35s ease-out;
+}
+
+a.hng-logo:hover img {
+    transform: rotate(90deg);
+}
+
+h2 {
+    margin-bottom: 1.5rem;
 }
 
 .underline {
@@ -78,12 +97,13 @@ a.link:hover::before {
 }
 
 a.btn {
-    border: 1px solid #00B0FF;    
+    border: 1px solid #00B0FF;
+    font-size: 14px;   
     border-radius: 3px;
     font-weight: normal;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1rem;
     background: #fff;
-    width: 253px;
+    width: 188px;
     display: block;
     margin: 2rem auto;
 }
@@ -129,31 +149,19 @@ a.btn:hover::after {
 }
 
 a.btn:hover span {
-    padding-left: 1rem;
+    padding-left: 0.8rem;
 }
 
-.hng-logo {
-    position: absolute;
-    border-radius: 50%;
-    width: 40px;
-    right: 0.5rem;
-    transition: 0.35s ease-out;
-}
-
-.hng-logo:hover img {
-    transform: rotate(90deg);
+@media screen and (min-width: 374px) {
+    a.btn {
+        padding: 0.8rem 2rem;
+        width: 239px;
+        font-size: 16px;
+    }    
 }
 
 @media screen and (min-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-    
     .underline li {
         width: 52%;
-    }
-
-    .hng-logo {
-        width: 50px;
     }
 }
