@@ -136,13 +136,14 @@ gsap.fromTo(animate9, {
 
 gsap.fromTo(animate10, {
     opacity: 0, 
-    y: 70
+    y: 50
 }, {
     opacity: 1,
     duration: 0.50,
+    delay: 0.50,
     y: 0, 
     ease: "sine.out",
     scrollTrigger: {
         trigger: animate9,
-        start: "bottom 95%"
+        start: "top 95%"
 }})
