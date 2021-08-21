@@ -19,13 +19,11 @@ body {
     margin: 0 auto;    
     padding: 5rem 0.5rem;
     max-width: 768px;
-    position: relative;
 }
 
 a {
     text-decoration: none;
     color: #333;
-    display: inline-block;
     position: relative;
 }
 
@@ -165,6 +163,10 @@ a.btn:hover span {
 }
 
 @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
     .underline li {
         width: 52%;
     }
