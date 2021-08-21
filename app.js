@@ -143,6 +143,6 @@ gsap.fromTo(animate10, {
     y: 0, 
     ease: "sine.out",
     scrollTrigger: {
-        trigger: animate10,
-        start: "top 95%"
+        trigger: animate9,
+        start: "bottom 95%"
 }})
