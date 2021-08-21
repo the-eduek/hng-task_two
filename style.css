@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     color: #333;
@@ -49,21 +53,11 @@ a.hng-logo {
 a.hng-logo img {
     border-radius: 50%;
     max-width: 40px;
-    animation: roll 3.5s linear 0s infinite;
+    transition: 0.5s ease-in-out;
 }
 
 a.hng-logo:hover img {
-    animation-play-state: paused;
-}
- 
-@keyframes roll {
-    25% {
-        transform: rotate(90deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    transform: rotate(-90deg);
 }
 
 h2 {

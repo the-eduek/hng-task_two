@@ -10,23 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" defer></script>
     <script src="./app.js" defer></script>
 </head>
 <body>
     <div class="container">
         <main>
-            <h1>&lt;hello world 🚀/&gt;
+            <h1 data-animate="1">&lt;hello world 🚀/&gt;
                 <a class="hng-logo" href="https://internship.zuri.team/"><img src="./hng-logo.png" alt="HNG logo"></a>
             </h1>
+
             <ul class="underline">
                 <li class="first"></li>
                 <li class="second"></li>
                 <li class="third"></li>
             </ul>                
 
-            <p>I'm <b>Eduek</b>, a frontend developer passionate about the web and making it accesible to everyone.
+            <p data-animate="2">I'm <b>Eduek</b>, a frontend web developer passionate about the web and making it accesible to everyone.
                 I enjoy translating art to code, building amazing scalable web products with amazing user experiences.
-                I am a great team player and look forward to promptly delivering my possible best on every project I am involved in.
+                I am a great team player and I look forward to promptly delivering my possible best on every project I am involved in.
             </p>
 
             <ul class="underline">
@@ -35,8 +38,9 @@
                 <li class="third"></li>
             </ul>
 
-            <h2>Skills 🛠️</h2>
-            <p>I have practical knowledge of <b>HTML5</b>, <b>CSS3 (Sass)</b>, <b>JavaScript</b>, <b>Git & Github</b>. 
+            <h2 data-animate="3">Skills 🛠️</h2>
+            <p data-animate="4">I have practical knowledge of <b>HTML5</b>, <b>CSS3</b>, <b>SCSS</b>, 
+                <b>JavaScript</b>, <b>GreenSock</b>, <b>CSS-In-JS</b>, <b>Git & Github</b>. 
                 I have also been learning <b>UI design</b> and <b>Vue.js</b>.</p>
             
             <ul class="underline">
@@ -45,26 +49,33 @@
                 <li class="third"></li>
             </ul>
 
-            <h2>Experience 💻</h2>
-            <p>Some of the projects I've worked on include <a class="link" href="https://the-eduek.github.io/moviesnextdoor"><b>MoviesNextDoor</b></a>,
-                <a class="link" href="https://the-eduek.github.io/findapp"><b>findApp</b></a>, <a class="link" href="https://gbale.netlify.app" target="_blank" rel="noopener noreferrer"><b>Gbalé.ng</b></a>,
-                <a class="link" href="https://the-eduek.github.io/fylo/"><b>Fylo</b></a>.</p>
+            <h2 data-animate="5">Experience 💻</h2>
+            <p data-animate="6">Some of the projects I've worked on include
+                <a class="link" href="https://the-eduek.github.io/moviesnextdoor/"><b>MoviesNextDoor</b></a>,
+                <a class="link" href="https://the-eduek.github.io/findapp/"><b>findApp</b></a>,
+                <a class="link" href="https://gbale.netlify.app" target="_blank" rel="noopener noreferrer"><b>Gbalé.ng</b></a>,
+                <a class="link" href="https://the-eduek.github.io/fylo/"><b>Fylo</b></a>,
+                <a class="link" href="https://the-eduek.github.io/bookmark/"><b>Bookmark</b></a>.
+            </p>
 
-            <a class="btn" href="https://github.com/the-eduek">View More Projects <span>&rarr;</span></a>
+            <div data-animate="7">
+                <a class="btn" href="https://github.com/the-eduek">View More Projects <span>&rarr;</span></a>
+            </div>            
 
             <ul class="underline">
                 <li class="first"></li>
                 <li class="second"></li>
                 <li class="third"></li>
             </ul>
-            <h2>Contact ☎️</h2>
-            <p>Need a developer? Reach out through <a class="link" href="mailto:eduekakpannyah@gmail.com"><b>eduekakpannyah@gmail.com</b></a>.</p>
-            <p>You could also say hi on twitter &mdash; <a class="link" href="https://twitter.com/the_eduek"><b>@the_eduek</b></a>.</p>
 
+            <h2 data-animate="8">Contact ☎️</h2>
+            <p data-animate="9">Need a developer? Reach out through
+                <a class="link" href="mailto:eduekakpannyah@gmail.com"><b>eduekakpannyah@gmail.com</b></a>.
+            </p>
+            <p data-animate="10">You could also say hi on twitter &mdash;
+                <a class="link" href="https://twitter.com/the_eduek"><b>@the_eduek</b></a>.
+            </p>
         </main>
-        <footer>
-
-        </footer>
     </div>   
 </body>
 </html>
